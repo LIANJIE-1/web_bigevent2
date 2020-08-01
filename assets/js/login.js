@@ -55,6 +55,7 @@ $(function() {
             success: function(res) {
                 if (res.status != 0) return layer.msg(res.message);
                 //注册成功,提示
+                console.log(1);
                 layer.msg(res.message);
                 //保存token
                 localStorage.setItem('token', res.token);
